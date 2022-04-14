@@ -11,7 +11,7 @@ class clienti(ListView):
     template_name = 'clienti_agente.html'
 
     def get_queryset(self):
-        query = self.request.GET.get("q")
+        query = self.request.GET.get("search")
         object_list = Clienti.objects.filter(agente__contains = query)
         return object_list
 
