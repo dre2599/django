@@ -1,0 +1,8 @@
+<h1>clienti per agente </h1>
+<ul>
+    {% for cliente in object_list %}
+        <li>    
+             agente {{cliente.agente}} || totale clienti {{cliente.totale}}
+        </li>
+    {% endfor %}
+</ul>
